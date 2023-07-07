@@ -9,7 +9,7 @@ An implementation of the hangman game in C language
 Clone the project
 
 ```bash
-  git clone https://github.com/martindupeyron/The-hangman-game.git
+  git clone https://github.com/tinouz/The-hangman-game.git
 ```
 
 Go to the project directory

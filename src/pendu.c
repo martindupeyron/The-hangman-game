@@ -72,7 +72,7 @@ static void afficherMot(ChaineSecrete Game) {
 static int choixNbTour() {
 	int NbTour = 0;
 	do {
-		printf("Combien de coups pour trouver le pendu? ");
+		printf("How many attempts to find the word? ");
 		scanf("%d", &NbTour);
 	} while(NbTour < 1);
 	return NbTour;
@@ -82,7 +82,7 @@ static bool gagnant(ChaineSecrete Game) {
 	for (int i = 0; i < strlen(Game->SecretWord); ++i)
 		if(!Game->Decouvert[i])
 			return false;
-	printf("Vous avez gagné ! Le mot a trouver était %s\n", Game->SecretWord);
+	printf("You won ! The word was %s\n", Game->SecretWord);
 	return true;
 }
 
@@ -113,7 +113,7 @@ void jeu() {
 	viderBuffer();
 
 	while(NbTours > 0) {
-		printf("\nIl vous reste %d tours\nRentrer une lettre : ", NbTours);
+		printf("\n %d attemps remaining\nEnter a letter : ", NbTours);
 		current = lireCaractere();
 		if(!devoilerLettre(current, Game))
 			NbTours--;
@@ -122,7 +122,6 @@ void jeu() {
 			return;
 	}
 
-	printf("Loooooser ! Le mot à trouver était %s\n", Game->SecretWord);
+	printf("Loooooser ! The word to find was %s\n", Game->SecretWord);
 	supprimerChaineSecrete(Game);
-
 }

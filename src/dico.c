@@ -5,7 +5,7 @@ void ajoutMot() {
 	assert(dico);
 
 	char NewWord[30];
-	printf("Rentrer le nouveau mot à ajouter au dictionnaire : ");
+	printf("Enter the new word to add : ");
 	scanf("%s",NewWord);
 
 	for (int i = 0; i < strlen(NewWord); ++i)
@@ -28,7 +28,7 @@ void afficherDico() {
 	int nbWord;
 	fscanf(dico,"%d",&nbWord);
 
-	printf("Le dictionnaire contient %d mots !\n", nbWord);
+	printf("The dictionary contains %d words !\n", nbWord);
 
 	char current[30];
 	for (int i = 0; i < nbWord; ++i)

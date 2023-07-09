@@ -7,11 +7,11 @@ int main(int argc, char*argv[]){
 	do {
 		do
 		{
-			printf("\n1- Jouer\n");
-			printf("2- Afficher Dictionnaire\n");
-			printf("3- Ajouter un mot au Dictionnaire\n");
-			printf("4- Quitter\n");
-			printf("\n Choix : ");
+			printf("\n1- Play\n");
+			printf("2- Display dictionary\n");
+			printf("3- Add a word\n");
+			printf("4- Exit\n");
+			printf("\n Choice : ");
 			scanf("%d", &choix);
 		} while (choix > 4 || choix < 1);
 

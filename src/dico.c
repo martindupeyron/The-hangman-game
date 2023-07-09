@@ -6,7 +6,7 @@ void ajoutMot() {
 
 	char NewWord[30];
 	printf("Enter the new word to add : ");
-	scanf("%s",NewWord);
+	scanf("%29s",NewWord);
 
 	for (int i = 0; i < strlen(NewWord); ++i)
 		NewWord[i] = toupper(NewWord[i]);
@@ -33,7 +33,7 @@ void afficherDico() {
 	char current[30];
 	for (int i = 0; i < nbWord; ++i)
 	{
-		fscanf(dico,"%s",current);
+		fscanf(dico,"%29s",current);
 		printf("%s\n", current);
 	}
 

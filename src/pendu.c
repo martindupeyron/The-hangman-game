@@ -33,7 +33,7 @@ static char* motAleatoire() {
 	char SecretWord[30];
 
 	while(RandomWord != 0) {
-		fscanf(dico, "%s", SecretWord);
+		fscanf(dico, "%29s", SecretWord);
 		RandomWord--;
 	}
 
